@@ -1,0 +1,119 @@
+% Watbridge Hotels & Suites — Revenue 1-Pager
+% Compiles with LuaLaTeX
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{colorlinks=true,linkcolor=wbBlue,urlcolor=wbBlue}
+\setmainfont{Noto Sans}
+\definecolor{wbBlue}{HTML}{1F4E79}
+\definecolor{wbRed}{HTML}{B22222}
+\definecolor{gray9}{HTML}{333333}
+\definecolor{gray6}{HTML}{777777}
+\pagestyle{empty}
+\setlist[itemize]{topsep=2pt,itemsep=3pt,parsep=0pt,leftmargin=1.6em}
+\titleformat{\section}{\Large\bfseries\color{wbBlue}}{}{0pt}{}
+\titleformat{\subsection}{\bfseries\color{wbBlue}}{}{0pt}{}
+
+\begin{document}
+
+% Header
+\noindent\colorbox{wbBlue}{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{\vspace{10pt}
+\textcolor{white}{\fontsize{18}{20}\selectfont \textbf{Grow Direct Bookings and Event Revenue in 90 Days}}\\[2pt]
+\textcolor{white}{\small Watbridge Hotels \& Suites — Uyo, Nigeria}\vspace{6pt}}}
+
+\vspace{0.8em}
+
+% Top: Situation + Solution
+\begin{minipage}[t]{0.5\textwidth}
+\textbf{\color{wbBlue}Situation snapshot (today)}
+\begin{itemize}
+  \item No HTTPS/SSL; trust and conversion risk.
+  \item No live rates/availability or modern booking engine; reliance on OTAs.
+  \item Slow, image-heavy pages; weak Core Web Vitals on mobile.
+  \item Thin SEO and schema; limited visibility for rooms/events.
+  \item Weak CTAs; no WhatsApp click-to-chat; limited analytics/remarketing.
+\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\textbf{\color{wbBlue}Revenue-focused solution overview}
+\begin{itemize}
+  \item Mobile-first redesign with upscale hospitality UX and content.
+  \item Booking engine + payments: enable \textbf{Pay online} \& \textbf{Reserve now, pay at check-in}.
+  \item Events/banquet lead flows with WhatsApp routing and fast response SLAs.
+  \item Speed/SEO upgrades (CDN, image optimization, schema, sitemaps).
+  \item Analytics/remarketing (GA4, Meta Pixel) and CRM handoff for follow-ups.
+\end{itemize}
+\end{minipage}
+
+\vspace{0.6em}
+
+% Technical plan
+\textbf{\color{wbBlue}Technical / Integration plan}
+\begin{itemize}
+  \item \textbf{Booking engine \& channel manager:} HotelRunner or BookOne as cost-effective options; Cloudbeds as premium. Final vendor selected during discovery based on fees/integration; billed at cost.
+  \item \textbf{Payments:} Paystack + Flutterwave for online prepay/deposits; also support reserve-without-payment. Map front-desk POS posting to PMS folio.
+  \item \textbf{SEO/performance targets:} <2s LCP on 4G, <100KB critical CSS/JS, CDN/caching, image optimization, schema.org Hotel/Room/Event markup, XML sitemap.
+  \item \textbf{Analytics:} GA4, Meta Pixel; conversion events for bookings, forms, WhatsApp clicks; Looker Studio dashboard monthly.
+\end{itemize}
+
+% ROI section
+\vspace{0.1em}
+\textbf{\color{wbBlue}ROI at a glance (assumptions: 72 rooms, ADR ₦30,000, OTA commission 15\%)}
+\begin{itemize}
+  \item Monthly capacity: 72 × 30 = 2,160 room nights.
+  \item Scenario A (65\% occupancy, shift 10\% of nights from OTAs to direct): 1,404 × 10\% = 140.4 nights; savings ≈ ₦631,800/mo.
+  \item Scenario B (65\% occupancy, shift 25\%): ≈351 nights; savings ≈ ₦1,579,500/mo.
+  \item Scenario C (occupancy lift +2pp via CRO/SEO): 2,160 × 2\% = 43 nights; incremental revenue ≈ ₦1,290,000/mo (ex-commission).
+  \item Events uplift example: +6 events/month at ₦200,000 average = ₦1,200,000/mo additional revenue.
+  \item Combined B+C yields ≈ ₦2,869,500/mo; program pays back in ~8–14 months allowing for ramp/seasonality.
+\end{itemize}
+
+% Price & Timeline side by side
+\vspace{0.1em}
+\begin{minipage}[t]{0.53\textwidth}
+\textbf{\color{wbBlue}Price \& terms — All-inclusive 12-month program}
+\begin{itemize}
+  \item Total professional services: \textbf{₦20,000,000}.
+  \item Third-party software (booking engine/PMS/channel manager, email, CDN) billed at cost.
+  \item Includes \textbf{₦1,600,000 contingency/software reserve} to cover first-year licenses where possible.
+  \item Payment milestones: \textbf{40\% deposit}, \textbf{40\% pre-launch}, \textbf{20\% post go-live}.
+\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.44\textwidth}
+\textbf{\color{wbBlue}Timeline \& guarantee}
+\begin{itemize}
+  \item \textbf{10–12 weeks to launch}:\newline
+  Weeks 1–2 Discovery; 3–5 Design/Content; 5–7 Build/Integrations; 8–9 UAT/Migration; 10 Launch; 11–12 Stabilization.
+  \item \textbf{90-day conversion guarantee}: if direct booking conversion doesn’t improve vs baseline, one month of growth work free.
+\end{itemize}
+\end{minipage}
+
+% Scope checklist
+\vspace{0.2em}
+\textbf{\color{wbBlue}Scope checklist (what’s included)}
+\begin{multicols}{2}
+\begin{itemize}
+  \item New responsive website (home, rooms, events/banquets, gallery, dining/poolside, pharmacy, blog, contact)
+  \item Real-time rates/availability; coupons/upsells
+  \item WhatsApp click-to-chat, phone CTAs, email capture
+  \item SEO technical foundation and content templates
+  \item Analytics + monthly performance report and review
+  \item Staff training for front desk and marketing
+\end{itemize}
+\end{multicols}
+
+% CTA Footer
+\vspace{0.2em}
+\noindent\colorbox{wbRed}{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{\vspace{8pt}
+\textcolor{white}{\textbf{Next steps:} Approve proposal → Sign MSA → 40\% deposit → Schedule kickoff (within 5 business days). Provide domain, GA, Pixels, and OTA access for discovery.}\\[2pt]
+\textcolor{white}{\small Contact: proposals@capy.ai • +234 (0) 000 0000 • Uyo/Lagos/SF}\vspace{6pt}}}
+
+\end{document}
